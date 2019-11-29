@@ -1,0 +1,26 @@
+<plist version="1.0">
+<dict>
+	<key>CFBundleExecutable</key>
+	<string>open-in-firefox-container</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleIdentifier</key>
+	<string>net.roywellington.open-in-firefox-container</string>
+	<key>CFBundleDisplayName</key>
+	<string>Open URL in Firefox Container</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>http</string>
+				<string>https</string>
+			</array>
+			<key>CFBundleURLName</key>
+			<string>HTTP URLs</string>
+		</dict>
+	</array>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+</dict>
+</plist>

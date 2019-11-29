@@ -1,0 +1,17 @@
+#!/bin/bash
+
+set -eux
+
+APP_DIR="OpenInFirefoxContainer.app"
+
+cargo build --release
+
+if [[ -d "$APP_DIR" ]]; then
+	rm -rf "$APP_DIR"
+fi
+mkdir "$APP_DIR"
+mkdir "$APP_DIR"/Contents
+mkdir "$APP_DIR"/Contents/MacOS
+mkdir "$APP_DIR"/Contents/Resources
+cp target/release/open-in-firefox-container "$APP_DIR"/Contents/MacOS/.
+cp macos/Info.plist "$APP_DIR"/Contents/.
